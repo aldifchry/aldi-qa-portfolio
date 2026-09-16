@@ -123,7 +123,7 @@ export default function Home() {
           <h1>Hi, I&apos;m <span>Aldi Fachry.</span></h1>
           <h2>I make software safer to release.</h2>
           <p className="lead">
-            QA Engineer with around 3 years of experience in manual testing,
+            IT Quality Assurance with around 3 years of experience in manual testing,
             API testing, SQL validation, and test automation across banking
             and financial services projects.
           </p>
@@ -233,7 +233,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer>© 2026 Aldi Fachry · QA Engineer Portfolio</footer>
+      <footer>© 2026 Aldi Fachry · IT Quality Assurance Portfolio</footer>
     </main>
   );
 }

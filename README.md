@@ -1,6 +1,6 @@
 # Aldi QA Portfolio
 
-A simple QA Engineer portfolio built with Next.js.
+A simple IT Quality Assurance portfolio built with Next.js.
 
 ## Run locally
 
