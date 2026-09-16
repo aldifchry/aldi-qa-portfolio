@@ -25,7 +25,7 @@ const projects = [
       "Manual Testing",
       "API Testing",
       "SIT",
-      "Regression Automation — Katalon",
+      "Regression Automation - Katalon",
       "UAT Support",
     ],
   },
