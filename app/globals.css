@@ -80,7 +80,7 @@ h1 span { color: #8df5c2; }
 .timeline p { color: #9ca4ad; max-width: 760px; }
 .quote-section { text-align: center; }
 .quote { font-size: clamp(28px, 5vw, 58px); line-height: 1.05; letter-spacing: -.04em; margin: 0 auto 15px; max-width: 850px; }
-.contact { display: flex; justify-content: space-between; gap: 50px; align-items: end; }
+.contact { display: flex; justify-content: space-between; gap: 50px; align-items: flex-end; }
 .contact h2 { font-size: 55px; line-height: 1; margin: 0; letter-spacing: -.05em; }
 .contact-links { display: flex; flex-wrap: wrap; gap: 25px; color: #8df5c2; font-weight: 700; }
 footer { border-top: 1px solid #20242a; padding: 25px 7vw; color: #69727d; font-size: 12px; }
