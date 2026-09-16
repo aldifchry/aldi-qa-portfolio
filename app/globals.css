@@ -118,20 +118,24 @@ footer { border-top: 1px solid #20242a; padding: 25px 7vw; color: #69727d; font-
 @media (max-width: 850px) {
   .nav {
     height: 70px;
-    padding: 0 5vw;
+    padding: 0 4vw;
+    gap: 12px;
   }
 
   .brand {
     font-size: 16px;
+    letter-spacing: .06em;
     white-space: nowrap;
-    margin-right: 28px;
+    flex-shrink: 0;
   }
 
   .navlinks {
     display: flex;
-    gap: 10px;
-    font-size: 10px;
+    gap: 8px;
+    font-size: 9px;
     white-space: nowrap;
+    margin-left: auto;
+    flex-shrink: 1;
   }
 
   .hero,
