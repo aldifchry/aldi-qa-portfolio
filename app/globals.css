@@ -116,12 +116,41 @@ footer { border-top: 1px solid #20242a; padding: 25px 7vw; color: #69727d; font-
   font-size: 13px;
 }
 @media (max-width: 850px) {
-  .navlinks { display: none; }
-  .hero, .about-grid { grid-template-columns: 1fr; }
-  .hero { padding-top: 70px; }
-  .project-grid { grid-template-columns: 1fr; }
-  .contact { display: block; }
-  .contact-links { margin-top: 30px; }
+  .nav {
+    height: 70px;
+    padding: 0 5vw;
+  }
+
+  .brand {
+    font-size: 18px;
+  }
+
+  .navlinks {
+    display: flex;
+    gap: 14px;
+    font-size: 12px;
+  }
+
+  .hero,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 70px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    display: block;
+  }
+
+  .contact-links {
+    margin-top: 30px;
+  }
 }
 
 .profile-card img {
