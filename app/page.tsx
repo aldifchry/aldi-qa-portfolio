@@ -5,9 +5,9 @@ const skills = [
 
 const projects = [
     {
-    title: "Bank Jatim — Internet Bank for Business",
+    title: "Bank Jatim - Internet Bank for Business",
     tag: "Internet Banking",
-    period: "September 2023 — April 2025",
+    period: "September 2023 - April 2025",
     desc: "Internet Bank for Business project involving manual, API, SIT, UAT, and regression automation using Katalon.",
     details: [
       "Manual Testing",
@@ -18,9 +18,9 @@ const projects = [
     ],
   },
   {
-    title: "Bank Jatim — Internet Banking",
+    title: "Bank Jatim - Internet Banking",
     tag: "Internet Banking",
-    period: "September 2023 — February 2024",
+    period: "September 2023 - February 2024",
     desc: "Internet Banking project involving manual and API testing, SIT, and UAT support.",
     details: [
       "Manual Testing",
@@ -30,9 +30,9 @@ const projects = [
     ],
   },
   {
-    title: "Bank Victoria — Internet Bank for Business",
+    title: "Bank Victoria - Internet Bank for Business",
     tag: "Internet Banking",
-    period: "August 2024 — October 2024",
+    period: "August 2024 - October 2024",
     desc: "Internet Bank for Business project covering manual and API testing, SIT, and UAT support.",
     details: [
       "Manual Testing",
@@ -42,9 +42,9 @@ const projects = [
     ],
   },
   {
-    title: "Bank CIMB Niaga — Internet Banking",
+    title: "Bank CIMB Niaga - Internet Banking",
     tag: "Internet Banking",
-    period: "April 2025 — September 2025",
+    period: "April 2025 - September 2025",
     desc: "Internet Banking project covering manual and API testing, SIT, and UAT support.",
     details: [
       "Manual Testing",
@@ -54,9 +54,9 @@ const projects = [
     ],
   },
   {
-    title: "Bank CIMB Niaga — Mobile Banking",
+    title: "Bank CIMB Niaga - Mobile Banking",
     tag: "Mobile Banking",
-    period: "April 2025 — February 2026",
+    period: "April 2025 - February 2026",
     desc: "Mobile Banking project covering manual and API testing, SIT, and UAT support.",
     details: [
       "Manual Testing",
@@ -66,9 +66,9 @@ const projects = [
     ],
   },
   {
-    title: "Bank Hibank — Mobile Banking",
+    title: "Bank Hibank - Mobile Banking",
     tag: "Mobile Banking",
-    period: "July 2025 — November 2025",
+    period: "July 2025 - November 2025",
     desc: "Mobile Banking project covering manual and API testing, SIT, and UAT support.",
     details: [
       "Manual Testing",
@@ -78,9 +78,9 @@ const projects = [
     ],
   },
   {
-    title: "Pegadaian — Tring!",
+    title: "Pegadaian - Tring!",
     tag: "Mobile Application",
-    period: "February 2026 — July 2026",
+    period: "February 2026 - July 2026",
     desc: "Digital application project involving manual and API testing, SIT, and UAT support.",
     details: [
       "Manual Testing",
@@ -90,9 +90,9 @@ const projects = [
     ],
   },
   {
-    title: "Bank Nobu — Internet Bank for Business",
+    title: "Bank Nobu - Internet Bank for Business",
     tag: "Internet Banking",
-    period: "August 2026 — Present",
+    period: "August 2026 - Present",
     desc: "Current Internet Bank for Business project involving manual and API testing, SIT, and UAT support.",
     details: [
       "Manual Testing",
@@ -149,7 +149,7 @@ export default function Home() {
         </div>
         <div className="about-grid">
           <p>
-            I&apos;m Aldi, a Quality Assurance Engineer currently working at
+            I&apos;m Aldi, a IT Quality Assurance currently working at
             PT Infosys Solusi Terpadu. My work has involved enterprise
             banking and financial services clients.
           </p>
