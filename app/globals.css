@@ -424,6 +424,7 @@ footer {
     height: 70px;
     padding: 0 4vw;
     gap: 10px;
+    justify-content: space-between;
   }
 
   .brand {
@@ -438,7 +439,7 @@ footer {
     gap: 8px;
     font-size: 9px;
     white-space: nowrap;
-    margin-left: auto;
+    margin-left: 0;
     flex-shrink: 1;
   }
 
@@ -446,6 +447,7 @@ footer {
     width: 28px;
     height: 28px;
     font-size: 13px;
+    flex-shrink: 0;
   }
 
   .hero,
@@ -457,6 +459,18 @@ footer {
     padding-top: 70px;
   }
 
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    display: block;
+  }
+
+  .contact-links {
+    margin-top: 30px;
+  }
+}
   .project-grid {
     grid-template-columns: 1fr;
   }
