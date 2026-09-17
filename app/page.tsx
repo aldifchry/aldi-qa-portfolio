@@ -3,16 +3,16 @@
 import { useState } from "react";
 
 const skills = [
-  "Manual Testing",
-  "API Testing",
-  "Automation Testing",
-  "SQL",
+  "Excel",
   "Postman",
   "Katalon Studio",
   "Cypress",
   "Jira",
+  "Asana",
   "DBeaver",
+  "JMeter",
   "K6",
+  "Appscript",
 ];
 
 const projects = [
@@ -22,11 +22,18 @@ const projects = [
     period: "September 2023 - April 2025",
     desc: "Internet Bank for Business project involving manual, API, SIT, UAT, and regression automation using Katalon.",
     details: [
-      "Manual Testing",
-      "API Testing",
-      "SIT",
-      "Regression Automation - Katalon",
-      "UAT Support",
+      "Account Configuration",
+"Account Categorization",
+"Group Settings",
+"Game Top-Up",
+"Indihome Internet",
+"Telkom",
+"Multifinance",
+"BPR",
+"Credit Card",
+"XL/Axis Data Plans",
+"Game Voucher",
+"Insurance",
     ],
   },
   {
@@ -35,10 +42,16 @@ const projects = [
     period: "September 2023 - February 2024",
     desc: "Internet Banking project involving manual and API testing, SIT, and UAT support.",
     details: [
-      "Manual Testing",
-      "API Testing",
-      "SIT",
-      "UAT Support",
+           "Hotel",
+"PDAM Customer ID",
+"Interest Rate Information",
+"PDAM Payment Code",
+"Mega Central Finance",
+"Multifinance",
+"TV Transaction Dispute",
+"Airline Ticket",
+"PDAM Virtual Account",
+"Ziswaf",
     ],
   },
   {
@@ -47,10 +60,9 @@ const projects = [
     period: "August 2024 - October 2024",
     desc: "Internet Bank for Business project covering manual and API testing, SIT, and UAT support.",
     details: [
-      "Manual Testing",
-      "API Testing",
-      "SIT",
-      "UAT Support",
+"Role Maintenance Authorization",
+"Product Purchase",
+"Email Broadcast",
     ],
   },
   {
@@ -59,10 +71,8 @@ const projects = [
     period: "April 2025 - September 2025",
     desc: "Internet Banking project covering manual and API testing, SIT, and UAT support.",
     details: [
-      "Manual Testing",
-      "API Testing",
-      "SIT",
-      "UAT Support",
+      "Transfer (Deliverable 3)",
+      "Affinity Debit Card",
     ],
   },
   {
@@ -71,10 +81,11 @@ const projects = [
     period: "April 2025 - February 2026",
     desc: "Mobile Banking project covering manual and API testing, SIT, and UAT support.",
     details: [
-      "Manual Testing",
-      "API Testing",
-      "SIT",
-      "UAT Support",
+      "Enable e-Debit",
+      "Point Xtra Dynamic Rewards",
+      "Schedule Transaction (Phase 2)",
+      "FDS Challenge",
+      "Add Phone Number"
     ],
   },
   {
@@ -83,10 +94,10 @@ const projects = [
     period: "July 2025 - November 2025",
     desc: "Mobile Banking project covering manual and API testing, SIT, and UAT support.",
     details: [
-      "Manual Testing",
-      "API Testing",
-      "SIT",
-      "UAT Support",
+      "Charity Wallet (Zakat, Donations)",
+      "Hi-Community",
+      "Virtual Card",
+      "Disable Screenshot & Screen Recording",
     ],
   },
   {
@@ -95,10 +106,11 @@ const projects = [
     period: "February 2026 - July 2026",
     desc: "Digital application project involving manual and API testing, SIT, and UAT support.",
     details: [
-      "Manual Testing",
-      "API Testing",
-      "SIT",
-      "UAT Support",
+      "Vehicle Installment Financing",
+      "Hajj Plus Financing",
+      "Ayoconnect Direct Debit",
+      "Pawn Services at Branches (Electronics & Jewelry)",
+      "Additional Bank Account Disbursement",
     ],
   },
   {
@@ -107,10 +119,11 @@ const projects = [
     period: "August 2026 - Present",
     desc: "Current Internet Bank for Business project involving manual and API testing, SIT, and UAT support.",
     details: [
-      "Manual Testing",
-      "API Testing",
-      "SIT",
-      "UAT Support",
+      "Change Kurs Rate",
+      "Foreign Currency Transfer",
+      "Currency",
+      "Forex Purpose",
+       "Transfer Destination Forex List",
     ],
   },
 ];
