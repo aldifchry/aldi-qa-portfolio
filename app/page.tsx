@@ -254,7 +254,11 @@ export default function Home() {
         <div className="skill-grid">
   {skills.map((skill) => (
     <div className="skill" key={skill.name}>
-      <img src={skill.logo} alt={skill.name} />
+    <img
+  src={skill.logo}
+  alt={skill.name}
+  className="skill-logo"
+/>
       <span>{skill.name}</span>
     </div>
   ))}
