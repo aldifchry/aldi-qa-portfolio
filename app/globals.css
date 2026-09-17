@@ -885,3 +885,51 @@ footer {
     font-size: 11px;
   }
 }
+/*Skills Logo Brand*/
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  min-height: 58px;
+  padding: 12px 18px;
+
+  border: 1px solid #30363e;
+  background: #0b0d10;
+
+  color: #cbd0d5;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.skill:hover {
+  transform: translateY(-3px);
+  border-color: #8df5c2;
+}
+
+.skill-logo {
+  width: 28px;
+  height: 28px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+.skill span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.light-mode .skill {
+  background: #ffffff;
+  color: #343a42;
+  border-color: #cfd4da;
+}
+
+.light-mode .skill:hover {
+  border-color: #168f62;
+}

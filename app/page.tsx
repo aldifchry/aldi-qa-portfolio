@@ -3,16 +3,46 @@
 import { useState } from "react";
 
 const skills = [
-  "Excel",
-  "Postman",
-  "Katalon Studio",
-  "Cypress",
-  "Jira",
-  "Asana",
-  "DBeaver",
-  "JMeter",
-  "K6",
-  "Appscript",
+  {
+    name: "Excel",
+    logo: "/icons/excel.svg",
+  },
+  {
+    name: "Postman",
+    logo: "/icons/postman.svg",
+  },
+  {
+    name: "Katalon Studio",
+    logo: "/icons/katalon.svg",
+  },
+  {
+    name: "Cypress",
+    logo: "/icons/cypress.svg",
+  },
+  {
+    name: "Jira",
+    logo: "/icons/jira.svg",
+  },
+  {
+    name: "Asana",
+    logo: "/icons/asana.svg",
+  },
+  {
+    name: "DBeaver",
+    logo: "/icons/dbeaver.svg",
+  },
+  {
+    name: "JMeter",
+    logo: "/icons/jmeter.svg",
+  },
+  {
+    name: "K6",
+    logo: "/icons/k6.svg",
+  },
+  {
+    name: "AppScript",
+    logo: "/icons/appscript.svg",
+  },
 ];
 
 const projects = [
@@ -222,12 +252,13 @@ export default function Home() {
         </div>
 
         <div className="skill-grid">
-          {skills.map((skill) => (
-            <div className="skill" key={skill}>
-              {skill}
-            </div>
-          ))}
-        </div>
+  {skills.map((skill) => (
+    <div className="skill" key={skill.name}>
+      <img src={skill.logo} alt={skill.name} />
+      <span>{skill.name}</span>
+    </div>
+  ))}
+</div>
       </section>
 
       <section id="projects" className="section">
