@@ -226,7 +226,7 @@ export default function Home() {
 
       <section id="about" className="section">
         <div className="section-heading">
-          <p className="eyebrow">01 ABOUT ME</p>
+          <p className="eyebrow">ABOUT ME</p>
           <h2>QA is more than finding bugs.</h2>
         </div>
 
@@ -247,7 +247,7 @@ export default function Home() {
 
       <section id="skills" className="section soft">
         <div className="section-heading">
-          <p className="eyebrow">02 SKILLS</p>
+          <p className="eyebrow">SKILLS</p>
           <h2>Tools I work with.</h2>
         </div>
 
@@ -267,7 +267,7 @@ export default function Home() {
 
       <section id="projects" className="section">
         <div className="section-heading">
-          <p className="eyebrow">03 PROJECTS</p>
+          <p className="eyebrow">PROJECTS</p>
 
           <h2>Selected QA projects.</h2>
 
@@ -302,7 +302,7 @@ export default function Home() {
 
       <section id="experience" className="section soft">
         <div className="section-heading">
-          <p className="eyebrow">04 EXPERIENCE</p>
+          <p className="eyebrow">EXPERIENCE</p>
           <h2>Professional experience.</h2>
         </div>
 
@@ -338,7 +338,7 @@ export default function Home() {
 
       <section id="contact" className="section contact">
         <div>
-          <p className="eyebrow">05 CONTACT</p>
+          <p className="eyebrow">CONTACT</p>
 
           <h2>Let&apos;s connect.</h2>
 
