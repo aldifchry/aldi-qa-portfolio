@@ -48,7 +48,8 @@ const skills = [
 const projects = [
   {
     title: "Bank Jatim - Internet Bank for Business",
-    tag: "Internet Banking",
+    logo: "/icons/bankjatim.svg",
+    tag: "Internet Bank for Business",
     period: "September 2023 - April 2025",
     desc: "Internet Bank for Business project involving manual, API, SIT, UAT, and regression automation using Katalon.",
     details: [
@@ -68,6 +69,7 @@ const projects = [
   },
   {
     title: "Bank Jatim - Internet Banking",
+    logo: "/icons/bankjatim.svg",
     tag: "Internet Banking",
     period: "September 2023 - February 2024",
     desc: "Internet Banking project involving manual and API testing, SIT, and UAT support.",
@@ -86,7 +88,8 @@ const projects = [
   },
   {
     title: "Bank Victoria - Internet Bank for Business",
-    tag: "Internet Banking",
+    logo: "/icons/bankvictoria.svg",
+    tag: "Internet Bank for Business",
     period: "August 2024 - October 2024",
     desc: "Internet Bank for Business project covering manual and API testing, SIT, and UAT support.",
     details: [
@@ -97,6 +100,7 @@ const projects = [
   },
   {
     title: "Bank CIMB Niaga - Internet Banking",
+    logo: "/icons/octoclicks.svg",
     tag: "Internet Banking",
     period: "April 2025 - September 2025",
     desc: "Internet Banking project covering manual and API testing, SIT, and UAT support.",
@@ -107,6 +111,7 @@ const projects = [
   },
   {
     title: "Bank CIMB Niaga - Mobile Banking",
+    logo: "/icons/octomobile.jpeg",
     tag: "Mobile Banking",
     period: "April 2025 - February 2026",
     desc: "Mobile Banking project covering manual and API testing, SIT, and UAT support.",
@@ -120,6 +125,7 @@ const projects = [
   },
   {
     title: "Bank Hibank - Mobile Banking",
+    logo: "/icons/hibank.svg",
     tag: "Mobile Banking",
     period: "July 2025 - November 2025",
     desc: "Mobile Banking project covering manual and API testing, SIT, and UAT support.",
@@ -132,6 +138,7 @@ const projects = [
   },
   {
     title: "Pegadaian - Tring!",
+    logo: "/icons/tring.svg",
     tag: "Mobile Application",
     period: "February 2026 - July 2026",
     desc: "Digital application project involving manual and API testing, SIT, and UAT support.",
@@ -145,7 +152,8 @@ const projects = [
   },
   {
     title: "Bank Nobu - Internet Bank for Business",
-    tag: "Internet Banking",
+    logo: "/icons/banknobu.png",
+    tag: "Internet Bank for Business",
     period: "August 2026 - Present",
     desc: "Current Internet Bank for Business project involving manual and API testing, SIT, and UAT support.",
     details: [
@@ -280,15 +288,25 @@ export default function Home() {
         <div className="project-grid">
           {projects.map((project, index) => (
             <article className="project" key={project.title}>
-              <div className="project-number">0{index + 1}</div>
+  <div className="project-number">0{index + 1}</div>
 
-              <p className="tag">{project.tag}</p>
+  <div className="project-client">
+    <div className="client-logo">
+      <img
+        src={project.logo}
+        alt={`${project.title} logo`}
+      />
+    </div>
 
-              <h3>{project.title}</h3>
+    <div>
+      <p className="tag">{project.tag}</p>
+      <h3>{project.title}</h3>
+    </div>
+  </div>
 
-              <p className="project-period">{project.period}</p>
+  <p className="project-period">{project.period}</p>
 
-              <p>{project.desc}</p>
+  <p>{project.desc}</p>
 
               <ul>
                 {project.details.map((detail) => (
