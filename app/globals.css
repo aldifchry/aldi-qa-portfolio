@@ -503,6 +503,44 @@ h1 span {
 
   max-width: 760px;
 }
+.experience-company {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.experience-logo {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.experience-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.experience-company h3 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.experience-company h4 {
+  margin: 2px 0 0;
+  color: #8df5c2;
+}
 
 /* =========================
    QUOTE
@@ -680,6 +718,7 @@ footer {
     justify-content: space-between;
   }
 
+  
   .brand {
     font-size: 15px;
 
@@ -776,6 +815,19 @@ footer {
 
     gap: 5px;
   }
+
+.experience-company {
+  align-items: flex-start;
+}
+
+.experience-logo {
+  width: 52px;
+  height: 52px;
+}
+
+.experience-company h3 {
+  font-size: 23px;
+}
 
   .contact {
     display: block;

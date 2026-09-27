@@ -325,23 +325,33 @@ export default function Home() {
         </div>
 
         <div className="timeline">
-          <div className="timeline-item">
-            <span>September 2023 - Now</span>
+  <div className="timeline-item">
+    <span>September 2023 - Now</span>
 
-            <div>
-              <h3>IT Quality Assurance</h3>
-
-              <h4>PT Infosys Solusi Terpadu</h4>
-
-              <p>
-                Manual and automation testing for enterprise banking and
-                financial services projects. Worked with requirements,
-                test scenarios, functional and regression testing, API
-                validation, database checks, defect reporting, and UAT support.
-              </p>
-            </div>
-          </div>
+    <div className="experience-content">
+      <div className="experience-company">
+        <div className="experience-logo">
+          <img
+            src="/icons/ist.png"
+            alt="PT Infosys Solusi Terpadu logo"
+          />
         </div>
+
+        <div>
+          <h3>IT Quality Assurance</h3>
+          <h4>PT Infosys Solusi Terpadu</h4>
+        </div>
+      </div>
+
+      <p>
+        Manual and automation testing for enterprise banking and
+        financial services projects. Worked with requirements,
+        test scenarios, functional and regression testing, API
+        validation, database checks, defect reporting, and UAT support.
+      </p>
+    </div>
+  </div>
+</div>
       </section>
 
       <section className="section quote-section">
