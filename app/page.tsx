@@ -1,48 +1,19 @@
+
 "use client";
 
 import { useState } from "react";
 
 const skills = [
-  {
-    name: "Excel",
-    logo: "/icons/excel.svg",
-  },
-  {
-    name: "Postman",
-    logo: "/icons/postman.svg",
-  },
-  {
-    name: "Katalon Studio",
-    logo: "/icons/katalon.svg",
-  },
-  {
-    name: "Cypress",
-    logo: "/icons/cypress.svg",
-  },
-  {
-    name: "Jira",
-    logo: "/icons/jira.svg",
-  },
-  {
-    name: "Asana",
-    logo: "/icons/asana.svg",
-  },
-  {
-    name: "DBeaver",
-    logo: "/icons/dbeaver.svg",
-  },
-  {
-    name: "JMeter",
-    logo: "/icons/jmeter.svg",
-  },
-  {
-    name: "K6",
-    logo: "/icons/k6.svg",
-  },
-  {
-    name: "AppScript",
-    logo: "/icons/appscript.svg",
-  },
+  { name: "Excel", logo: "/icons/excel.svg" },
+  { name: "Postman", logo: "/icons/postman.svg" },
+  { name: "Katalon Studio", logo: "/icons/katalon.svg" },
+  { name: "Cypress", logo: "/icons/cypress.svg" },
+  { name: "Jira", logo: "/icons/jira.svg" },
+  { name: "Asana", logo: "/icons/asana.svg" },
+  { name: "DBeaver", logo: "/icons/dbeaver.svg" },
+  { name: "JMeter", logo: "/icons/jmeter.svg" },
+  { name: "K6", logo: "/icons/k6.svg" },
+  { name: "AppScript", logo: "/icons/appscript.svg" },
 ];
 
 const projects = [
@@ -54,17 +25,17 @@ const projects = [
     desc: "Internet Bank for Business project involving manual, API, SIT, UAT, and regression automation using Katalon.",
     details: [
       "Account Configuration",
-"Account Categorization",
-"Group Settings",
-"Game Top-Up",
-"Indihome Internet",
-"Telkom",
-"Multifinance",
-"BPR",
-"Credit Card",
-"XL/Axis Data Plans",
-"Game Voucher",
-"Insurance",
+      "Account Categorization",
+      "Group Settings",
+      "Game Top-Up",
+      "Indihome Internet",
+      "Telkom",
+      "Multifinance",
+      "BPR",
+      "Credit Card",
+      "XL/Axis Data Plans",
+      "Game Voucher",
+      "Insurance",
     ],
   },
   {
@@ -74,16 +45,16 @@ const projects = [
     period: "September 2023 - February 2024",
     desc: "Internet Banking project involving manual and API testing, SIT, and UAT support.",
     details: [
-           "Hotel",
-"PDAM Customer ID",
-"Interest Rate Information",
-"PDAM Payment Code",
-"Mega Central Finance",
-"Multifinance",
-"TV Transaction Dispute",
-"Airline Ticket",
-"PDAM Virtual Account",
-"Ziswaf",
+      "Hotel",
+      "PDAM Customer ID",
+      "Interest Rate Information",
+      "PDAM Payment Code",
+      "Mega Central Finance",
+      "Multifinance",
+      "TV Transaction Dispute",
+      "Airline Ticket",
+      "PDAM Virtual Account",
+      "Ziswaf",
     ],
   },
   {
@@ -93,9 +64,9 @@ const projects = [
     period: "August 2024 - October 2024",
     desc: "Internet Bank for Business project covering manual and API testing, SIT, and UAT support.",
     details: [
-"Role Maintenance Authorization",
-"Product Purchase",
-"Email Broadcast",
+      "Role Maintenance Authorization",
+      "Product Purchase",
+      "Email Broadcast",
     ],
   },
   {
@@ -120,7 +91,7 @@ const projects = [
       "Point Xtra Dynamic Rewards",
       "Schedule Transaction (Phase 2)",
       "FDS Challenge",
-      "Add Phone Number"
+      "Add Phone Number",
     ],
   },
   {
@@ -161,39 +132,72 @@ const projects = [
       "Foreign Currency Transfer",
       "Currency",
       "Forex Purpose",
-       "Transfer Destination Forex List",
+      "Transfer Destination Forex List",
     ],
   },
 ];
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <main className={darkMode ? "site dark-mode" : "site light-mode"}>
+      {/* NAVBAR */}
       <nav className="nav">
-        <a className="brand" href="#home">
+        <a
+          className="brand"
+          href="#home"
+          onClick={() => setMenuOpen(false)}
+        >
           ALDI FACHRY<span>.</span>
         </a>
 
-        <div className="navlinks">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
+        {/* DROPDOWN MENU */}
+        <div className={`navlinks ${menuOpen ? "active" : ""}`}>
+          <a href="#about" onClick={() => setMenuOpen(false)}>
+            About
+          </a>
+          <a href="#skills" onClick={() => setMenuOpen(false)}>
+            Skills
+          </a>
+          <a href="#projects" onClick={() => setMenuOpen(false)}>
+            Projects
+          </a>
+          <a href="#experience" onClick={() => setMenuOpen(false)}>
+            Experience
+          </a>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>
+            Contact
+          </a>
         </div>
 
-        <button
-          className="theme-toggle"
-          onClick={() => setDarkMode(!darkMode)}
-          aria-label="Toggle dark and light mode"
-          type="button"
-        >
-          {darkMode ? "☀" : "☾"}
-        </button>
+        {/* NAVIGATION ACTIONS */}
+        <div className="nav-actions">
+          <button
+            className="theme-toggle"
+            onClick={() => setDarkMode(!darkMode)}
+            aria-label="Toggle dark and light mode"
+            type="button"
+          >
+            {darkMode ? "☀" : "☾"}
+          </button>
+
+          <button
+            className={`hamburger ${menuOpen ? "active" : ""}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+            type="button"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </nav>
 
+      {/* HERO */}
       <section id="home" className="hero section">
         <div className="hero-copy">
           <p className="eyebrow">IT QUALITY ASSURANCE</p>
@@ -232,6 +236,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ABOUT */}
       <section id="about" className="section">
         <div className="section-heading">
           <p className="eyebrow">ABOUT ME</p>
@@ -253,32 +258,32 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SKILLS */}
       <section id="skills" className="section soft">
         <div className="section-heading">
           <p className="eyebrow">SKILLS</p>
           <h2>Tools I work with.</h2>
         </div>
 
-<div className="skill-grid">
-  {skills.map((skill) => (
-    <div className="skill" key={skill.name}>
-      <img
-        src={skill.logo}
-        alt={skill.name}
-        className="skill-logo"
-      />
-      <span>{skill.name}</span>
-    </div>
-  ))}
-</div>
+        <div className="skill-grid">
+          {skills.map((skill) => (
+            <div className="skill" key={skill.name}>
+              <img
+                src={skill.logo}
+                alt={skill.name}
+                className="skill-logo"
+              />
+              <span>{skill.name}</span>
+            </div>
+          ))}
+        </div>
       </section>
 
+      {/* PROJECTS */}
       <section id="projects" className="section">
         <div className="section-heading">
           <p className="eyebrow">PROJECTS</p>
-
           <h2>Selected QA projects.</h2>
-
           <p className="subtext">
             Professional QA experience across banking, financial services,
             and digital applications.
@@ -288,25 +293,24 @@ export default function Home() {
         <div className="project-grid">
           {projects.map((project, index) => (
             <article className="project" key={project.title}>
-  <div className="project-number">0{index + 1}</div>
+              <div className="project-number">0{index + 1}</div>
 
-  <div className="project-client">
-    <div className="client-logo">
-      <img
-        src={project.logo}
-        alt={`${project.title} logo`}
-      />
-    </div>
+              <div className="project-client">
+                <div className="client-logo">
+                  <img
+                    src={project.logo}
+                    alt={`${project.title} logo`}
+                  />
+                </div>
 
-    <div>
-      <p className="tag">{project.tag}</p>
-      <h3>{project.title}</h3>
-    </div>
-  </div>
+                <div>
+                  <p className="tag">{project.tag}</p>
+                  <h3>{project.title}</h3>
+                </div>
+              </div>
 
-  <p className="project-period">{project.period}</p>
-
-  <p>{project.desc}</p>
+              <p className="project-period">{project.period}</p>
+              <p>{project.desc}</p>
 
               <ul>
                 {project.details.map((detail) => (
@@ -318,6 +322,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* EXPERIENCE */}
       <section id="experience" className="section soft">
         <div className="section-heading">
           <p className="eyebrow">EXPERIENCE</p>
@@ -325,35 +330,36 @@ export default function Home() {
         </div>
 
         <div className="timeline">
-  <div className="timeline-item">
-    <span>September 2023 - Now</span>
+          <div className="timeline-item">
+            <span>September 2023 - Now</span>
 
-    <div className="experience-content">
-      <div className="experience-company">
-        <div className="experience-logo">
-          <img
-            src="/icons/ist.png"
-            alt="PT Infosys Solusi Terpadu logo"
-          />
+            <div className="experience-content">
+              <div className="experience-company">
+                <div className="experience-logo">
+                  <img
+                    src="/icons/ist.png"
+                    alt="PT Infosys Solusi Terpadu logo"
+                  />
+                </div>
+
+                <div>
+                  <h3>IT Quality Assurance</h3>
+                  <h4>PT Infosys Solusi Terpadu</h4>
+                </div>
+              </div>
+
+              <p>
+                Manual and automation testing for enterprise banking and
+                financial services projects. Worked with requirements,
+                test scenarios, functional and regression testing, API
+                validation, database checks, defect reporting, and UAT support.
+              </p>
+            </div>
+          </div>
         </div>
-
-        <div>
-          <h3>IT Quality Assurance</h3>
-          <h4>PT Infosys Solusi Terpadu</h4>
-        </div>
-      </div>
-
-      <p>
-        Manual and automation testing for enterprise banking and
-        financial services projects. Worked with requirements,
-        test scenarios, functional and regression testing, API
-        validation, database checks, defect reporting, and UAT support.
-      </p>
-    </div>
-  </div>
-</div>
       </section>
 
+      {/* QUOTE */}
       <section className="section quote-section">
         <p className="quote">
           “Find problems before our users do.”
@@ -364,10 +370,10 @@ export default function Home() {
         </p>
       </section>
 
+      {/* CONTACT */}
       <section id="contact" className="section contact">
         <div>
           <p className="eyebrow">CONTACT</p>
-
           <h2>Let&apos;s connect.</h2>
 
           <p className="subtext">
@@ -398,6 +404,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FOOTER */}
       <footer>
         © 2026 Aldi Fachry · IT Quality Assurance Portfolio
       </footer>
