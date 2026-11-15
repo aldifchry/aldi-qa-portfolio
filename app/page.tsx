@@ -141,6 +141,10 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const toggleTheme = () => {
+    setDarkMode((prev) => !prev);
+  };
+
   return (
     <main className={darkMode ? "site dark-mode" : "site light-mode"}>
       {/* NAVBAR */}
@@ -174,15 +178,16 @@ export default function Home() {
 
         {/* NAVIGATION ACTIONS */}
         <div className="nav-actions">
-          <button
-            className="theme-toggle"
-            onClick={() => setDarkMode(!darkMode)}
-            aria-label="Toggle dark and light mode"
-            type="button"
-          >
-            {darkMode ? "☀" : "☾"}
-          </button>
-
+  <button
+  className="theme-toggle"
+  onClick={toggleTheme}
+  aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+  aria-pressed={!darkMode}
+  type="button"
+>
+  <span className="sun-icon">☀</span>
+  <span className="moon-icon">☾</span>
+</button>
           <button
             className={`hamburger ${menuOpen ? "active" : ""}`}
             onClick={() => setMenuOpen(!menuOpen)}
@@ -198,7 +203,7 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section id="home" className="hero section">
+      <section id="home" className="hero section soft">
         <div className="hero-copy">
           <p className="eyebrow">IT QUALITY ASSURANCE</p>
 
@@ -371,7 +376,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="section contact">
+<section id="contact" className="section soft contact">
         <div>
           <p className="eyebrow">CONTACT</p>
           <h2>Let&apos;s connect.</h2>
